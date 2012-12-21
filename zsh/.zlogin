@@ -1,0 +1,2 @@
+# Absolutely necessary
+fortune
