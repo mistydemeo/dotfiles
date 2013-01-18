@@ -1,13 +1,14 @@
 export EDITOR="subl"
 export VISUAL="subl -w"
 
-export PATH=$HOME/.rbenv/bin:/usr/local/share/python:/usr/local/bin:/usr/local/sbin:$PATH:$HOME/.cabal/bin:/usr/local/texlive/2011/bin/x86_64-darwin:$HOME/node_modules/.bin
+export PATH=/usr/local/share/python:/usr/local/bin:/usr/local/sbin:$PATH:$HOME/.cabal/bin:/usr/local/texlive/2011/bin/x86_64-darwin:$HOME/node_modules/.bin
 export NODE_PATH="/usr/local/lib/node_modules"
 
 alias brwe="sl"
 
-# set up rbenv
-eval "$(rbenv init -)"
+RUBIES=(~/.rbenv/versions/*)
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+chruby 1.9.3-p362
 
 # shut up the hostname from agnoster
 export DEFAULT_USER=$USER
