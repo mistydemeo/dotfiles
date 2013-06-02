@@ -6,10 +6,6 @@ export NODE_PATH="/usr/local/lib/node_modules"
 
 alias brwe="sl"
 
-RUBIES=(~/.rbenv/versions/*)
-source /usr/local/opt/chruby/share/chruby/chruby.sh
-chruby 1.9.3-p362
-
 # shut up the hostname from agnoster
 export DEFAULT_USER=$USER
 
