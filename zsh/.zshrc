@@ -1,6 +1,9 @@
 # otherwise powerline won't be found
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages
 
+# not set when SSHing in
+export LANG="{LANG:=en_CA.UTF-8}"
+
 # activate zsh-powerline
 . /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
