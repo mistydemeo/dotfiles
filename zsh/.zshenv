@@ -21,6 +21,3 @@ export NODE_PATH="/usr/local/lib/node_modules"
 alias brwe="sl"
 
 alias tigerbox="ssh -R 52698:localhost:52698 192.168.0.104"
-
-HOMEBREW="git@github.com:mxcl/homebrew.git"
-FORKBREW="git@github.com:mistydemeo/homebrew.git"
