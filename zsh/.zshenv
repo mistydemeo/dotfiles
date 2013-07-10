@@ -1,8 +1,13 @@
 # Prefer rsub to subl for remote shells
 if [ -n "$SSH_CLIENT" ]; then
 	export EDITOR="rsub"
+	export HOMEBREW_EDITOR="rsub"
 	export VISUAL="rsub -w"
+
+	typeset -A POWERLINE_CONFIG
+	POWERLINE_CONFIG=('ext.shell.theme' 'default_leftonly')
 else
+	export HOMEBREW_EDITOR="subl"
 	export EDITOR="subl"
 	export VISUAL="subl -w"
 fi
