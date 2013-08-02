@@ -21,3 +21,8 @@ export NODE_PATH="/usr/local/lib/node_modules"
 alias brwe="sl"
 
 alias tigerbox="ssh -R 52698:localhost:52698 192.168.0.104"
+
+# commandline CSV viewer, based on: http://chrisjean.com/2011/06/17/view-csv-data-from-the-command-line/
+function csview () {
+	<$1 sed -e 's/,,/, ,/g' | column -s, -t | less -#5 -N -S
+}
