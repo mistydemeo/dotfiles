@@ -1,2 +1,0 @@
-# Absolutely necessary
-fortune
