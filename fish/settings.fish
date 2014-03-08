@@ -8,8 +8,6 @@ end
 # PATH should take priority over any duplicates that live here
 set PATH $PATH /usr/local/texlive/2011/bin/x86_64-darwin
 
-fortune
-
 if test -n "$SSH_CLIENT"
 	set -x EDITOR "rsub"
 	set -x HOMEBREW_EDITOR "rsub"
@@ -24,3 +22,9 @@ set -xg NODE_PATH '/usr/local/lib/node_modules'
 
 alias brwe "sl"
 alias tigerbox "ssh -R 52698:localhost:52698 Byska.local"
+
+# If run for a non-interactive shell, e.g. ssh, this can
+# mess up scp, sftp, etc.
+if status --is-interactive
+	fortune
+end
