@@ -18,5 +18,14 @@ function parse_svn_revision
 	sh -c 'svn info 2> /dev/null' | sed -n '/^Revision/p' | sed -e 's/^Revision: \(.*\)/\1/'
 end
 
+set -x VIRTUALFISH_HOME $HOME/Envs
+set -g VIRTUALFISH_COMPAT_ALIASES
+source $HOME/github/virtualfish/virtual.fish
+
+function postactivate --on-event virtualenv_did_activate
+        set postactivate "$VIRTUAL_ENV/bin/postactivate.fish"
+        test -e $postactivate; and source $postactivate
+end
+
 source ~/.config/fish/settings.fish
 source ~/.config/fish/prompt.fish
