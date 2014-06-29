@@ -1,7 +1,7 @@
 # PATH needs to be set up before any paths are called,
 # because Tiger doesn't include /usr/local/bin in the
 # default PATH.
-for p in /usr/local/opt/ruby/bin /usr/local/sbin /usr/local/bin
+for p in /usr/local/sbin /usr/local/bin
 	set PATH $p $PATH
 end
 
