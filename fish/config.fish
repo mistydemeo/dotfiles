@@ -2,7 +2,13 @@
 set PLATFORM_SPECIFIC_FILE ~/.config/fish/(uname -s).fish
 if test -f $PLATFORM_SPECIFIC_FILE
    . $PLATFORM_SPECIFIC_FILE
-end  
+end
+
+# Used for non-synced, private settings
+set SECRETS_FILE ~/.config/fish/secret.fish
+if test -f $SECRETS_FILE
+	. $SECRETS_FILE
+end
 
 set -x CLICOLOR 1
 
@@ -29,3 +35,6 @@ end
 
 source ~/.config/fish/settings.fish
 source ~/.config/fish/prompt.fish
+
+# OPAM configuration
+. /Users/vlcice/.opam/opam-init/init.fish > /dev/null 2> /dev/null or true
