@@ -15,6 +15,7 @@ function format_path
 end
 
 function format_branch
+	test (which git); or return
 	set branch (git rev-parse --abbrev-ref HEAD 2>/dev/null)
 	if test $status -eq 0
 		printf "%s%s%s%s  $branch " (set_color $gray2) (set_color -b $gray2) (set_color $gray9) (set_color -b $gray2)
