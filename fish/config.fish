@@ -36,5 +36,4 @@ end
 source ~/.config/fish/settings.fish
 source ~/.config/fish/prompt.fish
 
-# OPAM configuration
-. /Users/vlcice/.opam/opam-init/init.fish > /dev/null 2> /dev/null or true
+test -e ~/.iterm2_shell_integration.fish; and source ~/.iterm2_shell_integration.fish
