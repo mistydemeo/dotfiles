@@ -1,6 +1,6 @@
 # Enable chruby and switch to default ruby
 source /usr/local/share/chruby/chruby.fish
-chruby 2.0.0 >/dev/null
+test (which chruby); and chruby 2.0.0 >/dev/null
 set -x TERM xterm-256color
 
 set -x DJANGO_SETTINGS_MODULE settings.local
