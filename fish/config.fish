@@ -33,7 +33,6 @@ function postactivate --on-event virtualenv_did_activate
         test -e $postactivate; and source $postactivate
 end
 
-source ~/.config/fish/aliases.fish
 source ~/.config/fish/settings.fish
 source ~/.config/fish/prompt.fish
 
