@@ -5,9 +5,6 @@ for p in /usr/local/sbin /usr/local/bin
 	set PATH $p $PATH
 end
 
-# PATH should take priority over any duplicates that live here
-set PATH $PATH /usr/local/texlive/2011/bin/x86_64-darwin
-
 if test -n "$SSH_CLIENT"
 	set -x EDITOR "rsub"
 	set -x HOMEBREW_EDITOR "rsub"
