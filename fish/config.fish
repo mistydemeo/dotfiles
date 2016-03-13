@@ -26,7 +26,7 @@ end
 
 set -x VIRTUALFISH_HOME $HOME/Envs
 set -g VIRTUALFISH_COMPAT_ALIASES
-source $HOME/github/virtualfish/virtual.fish
+test -e $HOME/github/virtualfish/virtual.fish; and source $HOME/github/virtualfish/virtual.fish
 
 function postactivate --on-event virtualenv_did_activate
         set postactivate "$VIRTUAL_ENV/bin/postactivate.fish"
