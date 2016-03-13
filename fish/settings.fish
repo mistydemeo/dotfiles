@@ -19,7 +19,6 @@ set -xg NODE_PATH '/usr/local/lib/node_modules'
 
 alias brwe "sl"
 alias tigerbox "ssh -R 52698:localhost:52698 Byska.local"
-alias tamias='ssh -p 2200 -A -L 9999:localhost:9999 -L 8888:localhost:8888 -R 52698:localhost:52698 mdemeo@tamias.artefactual.com'
 
 # If run for a non-interactive shell, e.g. ssh, this can
 # mess up scp, sftp, etc.
