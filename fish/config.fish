@@ -37,3 +37,7 @@ source ~/.config/fish/settings.fish
 source ~/.config/fish/prompt.fish
 
 test -e ~/.iterm2_shell_integration.fish; and source ~/.iterm2_shell_integration.fish
+
+# Set up nodenv and rbenv, but only if installed
+status --is-interactive; and type --quiet nodenv; and . (nodenv init -|psub)
+status --is-interactive; and type --quiet rbenv; and . (rbenv init -|psub)
