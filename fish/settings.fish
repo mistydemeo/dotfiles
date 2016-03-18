@@ -28,6 +28,6 @@ alias tigerbox "ssh -R 52698:localhost:52698 Byska.local"
 
 # If run for a non-interactive shell, e.g. ssh, this can
 # mess up scp, sftp, etc.
-if status --is-interactive
+if status --is-interactive; and type --quiet fortune
 	fortune
 end
