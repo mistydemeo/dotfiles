@@ -44,3 +44,9 @@ end
 function fish_right_prompt
 	printf "%s%s%s " (format_exit_status) (format_branch) (set_color normal)
 end
+
+# Disable ctrl-c printing
+function __fish_cancel_commandline
+    commandline ""
+    commandline -f repaint
+end
