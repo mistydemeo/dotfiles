@@ -44,3 +44,7 @@ status --is-interactive; and type --quiet rbenv; and . (rbenv init -|psub)
 
 # Make sure GPG knows the right terminal to use
 set -x GPG_TTY (tty)
+
+if test -d ~/.cargo/bin
+  set -x PATH ~/.cargo/bin $PATH
+end
