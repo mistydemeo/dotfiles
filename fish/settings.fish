@@ -5,6 +5,10 @@ for p in /usr/local/sbin /usr/local/bin
 	set PATH $p $PATH
 end
 
+if test -x $HOME/.cargo/bin
+	set PATH $HOME/.cargo/bin $PATH
+end
+
 if type --quiet "subl"
 	if test -n "$SSH_CLIENT"
 		set -x EDITOR "rsub"
