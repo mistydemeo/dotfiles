@@ -27,7 +27,6 @@ end
 
 set -xg NODE_PATH '/usr/local/lib/node_modules'
 
-alias brwe "sl"
 alias tigerbox "ssh -R 52698:localhost:52698 Byska.local"
 
 # If run for a non-interactive shell, e.g. ssh, this can
