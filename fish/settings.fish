@@ -1,3 +1,8 @@
+# Set up Homebrew paths if necessary
+if test -x "/opt/homebrew/bin/brew"
+	eval (/opt/homebrew/bin/brew shellenv)
+end
+
 # PATH needs to be set up before any paths are called,
 # because Tiger doesn't include /usr/local/bin in the
 # default PATH.
