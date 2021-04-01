@@ -24,10 +24,10 @@ if type --quiet "subl"
 		set -x HOMEBREW_EDITOR "subl"
 		set -x VISUAL "subl -w"
 	end
-else if type --quiet "atom"
-	set -x EDITOR "atom"
-	set -x HOMEBREW_EDITOR "atom"
-	set -x VISUAL "atom -w"
+else if type --quiet "code"
+	set -x EDITOR "code"
+	set -x HOMEBREW_EDITOR "code"
+	set -x VISUAL "code -w"
 end
 
 set -xg NODE_PATH '/usr/local/lib/node_modules'
