@@ -46,7 +46,6 @@ function fish_right_prompt
 end
 
 # Disable ctrl-c printing
-function __fish_cancel_commandline
-    commandline ""
-    commandline -f repaint
+function fish_user_key_bindings
+    bind \cc 'commandline ""'
 end
