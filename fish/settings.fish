@@ -39,3 +39,9 @@ alias tigerbox "ssh -R 52698:localhost:52698 Byska.local"
 if status --is-interactive; and type --quiet fortune
 	fortune
 end
+
+# Add extra settings just for work that I can't push
+# to GitHub
+if test -f ~/.config/fish/work.fish
+	source ~/.config/fish/work.fish
+end
