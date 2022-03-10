@@ -4,7 +4,4 @@
 mkdir -p ~/.config
 ln -s $(pwd)/fish ~/.config
 
-# Install fish
-sudo apt-get update && sudo apt-get install -y fish
-
 cat .zshrc >> ~/.zshrc
