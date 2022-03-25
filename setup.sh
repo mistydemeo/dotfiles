@@ -7,5 +7,5 @@ ln -s $(pwd)/fish ~/.config
 cat .zshrc >> ~/.zshrc
 
 if [ -n "$SPIN" ]; then
-  chsh -s /usr/bin/fish spin
+  sudo chsh -s /usr/bin/fish spin
 fi
