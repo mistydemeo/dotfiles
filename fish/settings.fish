@@ -45,3 +45,7 @@ end
 if test -f ~/.config/fish/work.fish
 	source ~/.config/fish/work.fish
 end
+
+if type --quiet oxipng
+	alias o "oxipng -omax --alpha"
+end
