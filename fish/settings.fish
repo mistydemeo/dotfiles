@@ -30,6 +30,11 @@ else if type --quiet "code"
 	set -x VISUAL "code -w"
 end
 
+# Set up experimental fish shell integration
+if type --quiet "code"
+	string match -q "$TERM_PROGRAM" "vscode" and . (code --locate-shell-integration-path fish)
+end
+
 set -xg NODE_PATH '/usr/local/lib/node_modules'
 
 alias tigerbox "ssh -R 52698:localhost:52698 Byska.local"
