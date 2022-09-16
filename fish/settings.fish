@@ -32,7 +32,13 @@ end
 
 # Set up experimental fish shell integration
 if type --quiet "code"
-	string match -q "$TERM_PROGRAM" "vscode" and . (code --locate-shell-integration-path fish)
+	if test -d /etc/spin
+		set code_path /usr/share/code/bin/code
+	else
+		set code_path code
+	end
+
+	string match -q "$TERM_PROGRAM" "vscode" and . ($code_path --locate-shell-integration-path fish)
 end
 
 set -xg NODE_PATH '/usr/local/lib/node_modules'
