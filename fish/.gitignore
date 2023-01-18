@@ -1,2 +1,4 @@
 /completions/spin.fish
 /fish_variables
+/functions/kdev.fish
+/functions/kprod.fish
