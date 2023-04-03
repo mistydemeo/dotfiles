@@ -48,7 +48,7 @@ if test (count $packages) != 0
 end
 
 # Optionally set up babelfish and home-manager, if present
-if which -s babelfish
+if type -q babelfish
     function _babelfish_source -S
         if test "$argv[1]" = '-' || string match -q '*.fish' "$argv[1]" || test -z "$argv[1]"
           builtin source $argv
