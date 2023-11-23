@@ -58,5 +58,9 @@ if test -f ~/.config/fish/work.fish
 end
 
 if type --quiet oxipng
-	alias o "oxipng -omax --alpha"
+	function o --description "Optimize a set of PNGs using oxipng"
+		for img in $argv
+			oxipng -omax --verbose --alpha $img
+		end
+	end
 end
