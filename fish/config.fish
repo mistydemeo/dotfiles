@@ -45,11 +45,3 @@ status --is-interactive; and type --quiet shadowenv; and shadowenv init fish | s
 
 # Make sure GPG knows the right terminal to use
 set -x GPG_TTY (tty)
-
-if test -d ~/.cargo/bin
-    set -x PATH ~/.cargo/bin $PATH
-end
-
-if test -f /opt/dev/dev.fish
-    source /opt/dev/dev.fish
-end

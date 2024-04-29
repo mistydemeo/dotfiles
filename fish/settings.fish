@@ -10,9 +10,7 @@ for p in /usr/local/sbin /usr/local/bin
 	set PATH $p $PATH
 end
 
-if test -x $HOME/.cargo/bin
-	set PATH $HOME/.cargo/bin $PATH
-end
+fish_add_path --path $HOME/.cargo/bin
 
 if type --quiet "subl"
 	if test -n "$SSH_CLIENT"
@@ -24,24 +22,8 @@ if type --quiet "subl"
 		set -x HOMEBREW_EDITOR "subl"
 		set -x VISUAL "subl -w"
 	end
-else if type --quiet "code"
-	set -x EDITOR "code"
-	set -x HOMEBREW_EDITOR "code"
-	set -x VISUAL "code -w"
 end
 
-# Set up experimental fish shell integration
-if type --quiet "code"
-	if test -d /etc/spin
-		set code_path /usr/share/code/bin/code
-	else
-		set code_path code
-	end
-
-	string match -q "$TERM_PROGRAM" "vscode" and . ($code_path --locate-shell-integration-path fish)
-end
-
-set -xg NODE_PATH '/usr/local/lib/node_modules'
 
 alias tigerbox "ssh -R 52698:localhost:52698 Byska.local"
 
