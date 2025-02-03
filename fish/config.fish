@@ -45,3 +45,10 @@ status --is-interactive; and type --quiet shadowenv; and shadowenv init fish | s
 
 # Make sure GPG knows the right terminal to use
 set -x GPG_TTY (tty)
+
+# Turn off annoying Homebrew things
+set -x HOMEBREW_DEVELOPER 1
+set -x HOMEBREW_NO_INSTALLED_DEPENDENTS_CHECK 1
+set -x HOMEBREW_NO_INSTALL_CLEANUP 1
+set -x HOMEBREW_NO_INSTALL_UPGRADE 1
+set -x HOMEBREW_NO_AUTO_UPDATE 1
