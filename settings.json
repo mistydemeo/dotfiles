@@ -8,8 +8,17 @@
 // from the command palette or from `Zed` application menu.
 {
   "base_keymap": "SublimeText",
-  "buffer_font_size": 15,
+  "ui_font_size": 16,
+  "buffer_font_size": 16,
   "buffer_font_family": "Menlo",
   "soft_wrap": "preferred_line_length",
-  "languages": { "TOML": { "format_on_save": "off" } }
+  "languages": { "TOML": { "format_on_save": "off" } },
+  "assistant": {
+    "version": "2",
+    "enabled": false
+  },
+  "features": {
+    "inline_completion_provider": "none",
+    "copilot": false
+  }
 }
