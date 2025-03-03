@@ -18,7 +18,7 @@
     "enabled": false
   },
   "features": {
-    "inline_completion_provider": "none",
+    "edit_prediction_provider": "none",
     "copilot": false
   }
 }
