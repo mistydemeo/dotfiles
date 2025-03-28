@@ -13,3 +13,5 @@ selection-foreground = fefefe
 selection-background = 7e7f7e
 background-opacity = 0.93
 background-blur = 6
+
+macos-option-as-alt = false
