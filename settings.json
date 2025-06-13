@@ -13,7 +13,7 @@
   "buffer_font_family": "Menlo",
   "soft_wrap": "preferred_line_length",
   "languages": { "TOML": { "format_on_save": "off" } },
-  "assistant": {
+  "agent": {
     "version": "2",
     "enabled": false
   },
