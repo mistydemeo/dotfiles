@@ -12,12 +12,15 @@
   "buffer_font_size": 16,
   "buffer_font_family": "Menlo",
   "soft_wrap": "preferred_line_length",
-  "languages": { "TOML": { "format_on_save": "off" } },
+  "languages": {
+    "TOML": { "format_on_save": "off" },
+    "Python": { "language_servers": ["ty", "!basedpyright", "..."] },
+  },
   "agent": {
-    "enabled": false
+    "enabled": false,
   },
   "disable_ai": true,
   "features": {
-    "edit_prediction_provider": "none"
-  }
+    "edit_prediction_provider": "none",
+  },
 }
