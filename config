@@ -15,3 +15,5 @@ background-opacity = 0.93
 background-blur = 6
 
 macos-option-as-alt = false
+
+keybind = opt+backspace=text:\x17
