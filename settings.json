@@ -7,6 +7,9 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "edit_predictions": {
+    "provider": "none"
+  },
   "base_keymap": "SublimeText",
   "ui_font_size": 16,
   "buffer_font_size": 16,
@@ -20,7 +23,4 @@
     "enabled": false,
   },
   "disable_ai": true,
-  "features": {
-    "edit_prediction_provider": "none",
-  },
 }
