@@ -1,0 +1,15 @@
+[window]
+dimensions = { columns = 110, lines = 35 }
+padding = { x = 5, y = 2 }
+opacity = 0.9
+blur = true
+
+[font]
+normal = { family = "Menlo for Powerline", style = "Regular" }
+size = 12
+
+[keyboard]
+bindings = [
+	{ key = "Backspace", mods = "Alt", chars = "\x17" },
+	{ key = "Super", mods = "Alt", chars = "\x15" },
+]
