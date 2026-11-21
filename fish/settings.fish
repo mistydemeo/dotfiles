@@ -26,6 +26,8 @@ end
 
 
 alias tigerbox "ssh -R 52698:localhost:52698 Byska.local"
+# Blasted muscle memory
+alias nvim vim
 
 # If run for a non-interactive shell, e.g. ssh, this can
 # mess up scp, sftp, etc.
